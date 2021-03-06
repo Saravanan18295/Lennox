@@ -9,7 +9,6 @@ import com.relevantcodes.extentreports.LogStatus;
 import ObjectRepository.Homepage;
 import ObjectRepository.Lennoxpropage;
 import ObjectRepository.Loginpage;
-import Screenshot.TakeScreenshot;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -45,7 +44,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-  public class CodingRound extends TakeScreenshot{
+  public class CodingRound{
 	ExtentReports extent;
 	ExtentTest logger;
 		  
@@ -354,6 +353,7 @@ import org.testng.annotations.Test;
 		
 			lenoxpage.Savelead().click();
 			
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.titleContains("LennoxPRO"));	
 			Thread.sleep(10000);
 			WebElement global = driver.findElement(By.id("globalMessages"));
@@ -394,7 +394,9 @@ import org.testng.annotations.Test;
 			extent.flush();
 	        extent.close();
 			
-//		driver.close();
+		driver.close();
+		
+		//Actually i don't have credit card to create a personal Microsoft Azure account, that's why i didn't integrated with Azure.
 
 		}
   
