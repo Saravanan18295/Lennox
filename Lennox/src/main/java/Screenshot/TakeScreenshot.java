@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 
 public class TakeScreenshot  {
-
+//
 	public void screenshot(String testcasename, WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
