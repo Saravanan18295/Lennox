@@ -2,61 +2,61 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="154038" started-at="2021-03-06T20:23:50Z" finished-at="2021-03-06T20:26:24Z">
+  <suite name="Default suite" duration-ms="89834" started-at="2021-03-08T04:55:45Z" finished-at="2021-03-08T04:57:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="154038" started-at="2021-03-06T20:23:50Z" finished-at="2021-03-06T20:26:24Z">
+    <test name="Default test" duration-ms="89834" started-at="2021-03-08T04:55:45Z" finished-at="2021-03-08T04:57:15Z">
       <class name="Lennox.CodingRound">
-        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Lennox.CodingRound@7cd62f43]" name="openbrowser" is-config="true" duration-ms="521" started-at="2021-03-07T01:53:50Z" finished-at="2021-03-07T01:53:51Z">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="openbrowser" is-config="true" duration-ms="188" started-at="2021-03-08T10:25:45Z" finished-at="2021-03-08T10:25:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="LaunchandLogin()[pri:0, instance:Lennox.CodingRound@7cd62f43]" name="LaunchandLogin" duration-ms="56500" started-at="2021-03-07T01:53:51Z" finished-at="2021-03-07T01:54:47Z">
+        <test-method status="PASS" signature="LaunchandLogin()[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="LaunchandLogin" duration-ms="36548" started-at="2021-03-08T10:25:45Z" finished-at="2021-03-08T10:26:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchandLogin -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Lennox.CodingRound@7cd62f43]" name="getResult" is-config="true" duration-ms="2" started-at="2021-03-07T01:54:47Z" finished-at="2021-03-07T01:54:47Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="getResult" is-config="true" duration-ms="5" started-at="2021-03-08T10:26:22Z" finished-at="2021-03-08T10:26:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LaunchandLogin status=SUCCESS method=CodingRound.LaunchandLogin()[pri:0, instance:Lennox.CodingRound@7cd62f43] output={null}]]]>
+                <![CDATA[[TestResult name=LaunchandLogin status=SUCCESS method=CodingRound.LaunchandLogin()[pri:0, instance:Lennox.CodingRound@1e88b3c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="CreateLead()[pri:1, instance:Lennox.CodingRound@7cd62f43]" name="CreateLead" duration-ms="17339" started-at="2021-03-07T01:54:47Z" finished-at="2021-03-07T01:55:05Z">
+        <test-method status="PASS" signature="CreateLead()[pri:1, instance:Lennox.CodingRound@1e88b3c]" name="CreateLead" duration-ms="13779" started-at="2021-03-08T10:26:22Z" finished-at="2021-03-08T10:26:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateLead -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Lennox.CodingRound@7cd62f43]" name="getResult" is-config="true" duration-ms="0" started-at="2021-03-07T01:55:05Z" finished-at="2021-03-07T01:55:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CreateLead status=SUCCESS method=CodingRound.CreateLead()[pri:1, instance:Lennox.CodingRound@7cd62f43] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="CreateNew()[pri:2, instance:Lennox.CodingRound@7cd62f43]" name="CreateNew" duration-ms="78147" started-at="2021-03-07T01:55:05Z" finished-at="2021-03-07T01:56:23Z">
+        <test-method status="PASS" signature="CreateNew()[pri:2, instance:Lennox.CodingRound@1e88b3c]" name="CreateNew" duration-ms="37754" started-at="2021-03-08T10:26:36Z" finished-at="2021-03-08T10:27:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNew -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Lennox.CodingRound@7cd62f43]" name="getResult" is-config="true" duration-ms="1" started-at="2021-03-07T01:56:23Z" finished-at="2021-03-07T01:56:23Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="getResult" is-config="true" duration-ms="0" started-at="2021-03-08T10:26:36Z" finished-at="2021-03-08T10:26:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CreateNew status=SUCCESS method=CodingRound.CreateNew()[pri:2, instance:Lennox.CodingRound@7cd62f43] output={null}]]]>
+                <![CDATA[[TestResult name=CreateLead status=SUCCESS method=CodingRound.CreateLead()[pri:1, instance:Lennox.CodingRound@1e88b3c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:Lennox.CodingRound@7cd62f43]" name="endReport" is-config="true" duration-ms="1496" started-at="2021-03-07T01:56:23Z" finished-at="2021-03-07T01:56:24Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="getResult" is-config="true" duration-ms="1" started-at="2021-03-08T10:27:13Z" finished-at="2021-03-08T10:27:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateNew status=SUCCESS method=CodingRound.CreateNew()[pri:2, instance:Lennox.CodingRound@1e88b3c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="endReport" is-config="true" duration-ms="1533" started-at="2021-03-08T10:27:13Z" finished-at="2021-03-08T10:27:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
