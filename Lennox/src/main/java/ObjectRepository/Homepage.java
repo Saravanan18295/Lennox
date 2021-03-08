@@ -33,7 +33,22 @@ public class Homepage {
 			@FindBy(xpath = "//a[@class='btn btn-primary hide-mobile introjs-l-9 introjs-l-83']")
 			WebElement Addlead;
 
-		
+			@FindBy(xpath = "//span[@class='signedin-user']")
+			WebElement Signeduser;
+			
+			@FindBy(id = "logout_id")
+			WebElement Logout;
+
+public WebElement Signeduser() {
+
+	return Signeduser;
+}
+
+public WebElement Logout() {
+
+	return Logout;
+}
+
 public WebElement Clicksign() {
 
 	return Clicksignin;

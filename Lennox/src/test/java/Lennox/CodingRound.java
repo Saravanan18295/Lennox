@@ -52,12 +52,18 @@ import org.testng.annotations.Test;
 	public static XSSFSheet sheet;
 	public static XSSFCell cell;
 	WebDriver driver;
+	Actions actions;
+	WebDriverWait wait;
+	JavascriptExecutor js;
 
 	String today;
 	String testcasename;
 
 	@BeforeTest
 	public void openbrowser() throws InterruptedException {
+		
+		//Actually i don't have credit card to create a personal Microsoft Azure account, that's why i didn't integrated with Azure.
+
 		extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/QAAutomationInterview.html", true);
 		extent.addSystemInfo("Host Name", "SoftwareTestingMaterial")
               .addSystemInfo("Environment", "Automation Testing")
@@ -81,7 +87,9 @@ import org.testng.annotations.Test;
 		driver.manage().window().maximize();
 		driver.get("https://www.liidaveqa.com/");	
 		
-		WebDriverWait wait = new WebDriverWait(driver, 60);
+		actions = new Actions(driver);
+		wait = new WebDriverWait(driver, 50);
+		js = (JavascriptExecutor) driver;
 		wait.until(ExpectedConditions.titleContains("Homepage"));	
 		
 		//POM refers
@@ -140,9 +148,6 @@ import org.testng.annotations.Test;
 
 	@Test(priority = 1)
 	public void CreateLead() throws IOException, InterruptedException {
-		Actions actions = new Actions(driver);
-		WebDriverWait wait = new WebDriverWait(driver, 100);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
 		Homepage homeobj = new Homepage();
 		
 		logger = extent.startTest("CreateLead");
@@ -152,7 +157,7 @@ import org.testng.annotations.Test;
 		String navigation= cell.getStringCellValue();
 		
 	try {
-	System.out.println("Yes");
+	System.out.println("Actually i don't have credit card to create a personal Microsoft Azure account, that's why i didn't integrated with Azure");
 	WebElement navigate = driver.findElement(By.xpath("//*[@href = '"+ navigation +"']"));
 	wait.until(ExpectedConditions.elementToBeClickable(navigate));
 	navigate.click();
@@ -193,9 +198,6 @@ import org.testng.annotations.Test;
 
 	@Test(priority = 2)
 	public void CreateNew() throws IOException, InterruptedException {
-		Actions actions = new Actions(driver);
-		WebDriverWait wait = new WebDriverWait(driver, 50);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
 		Lennoxpropage lenoxpage = new Lennoxpropage();
 		
 		logger = extent.startTest("CreateNew");
@@ -312,7 +314,7 @@ import org.testng.annotations.Test;
 		  	Thread.sleep(5000);
 		  	Process p = Runtime.getRuntime().exec("C:\\Users\\saravanan.pazhani\\eclipse-workspace\\Lennox\\Documents\\AutoITScript.exe" );
 			p.waitFor();
-		  	Thread.sleep(3000);
+		  	Thread.sleep(5000);
 		  	
 			wait.until(ExpectedConditions.elementToBeClickable(lenoxpage.addtolead()));
 		  	Thread.sleep(4000);
@@ -335,14 +337,13 @@ import org.testng.annotations.Test;
 				Thread.sleep(2000);
 				actions.moveToElement(lenoxpage.imageupload()).click().build().perform();
 
-				driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-				
+				driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);				
 //				
 				//Handle file explorer using AUtoIT
-			  	Thread.sleep(2000);
+			  	Thread.sleep(3000);
 			  	Process p1 = Runtime.getRuntime().exec("C:\\Users\\saravanan.pazhani\\eclipse-workspace\\Lennox\\Documents\\imgupload.exe" );
 				p1.waitFor();
-			  	Thread.sleep(2000);
+			  	Thread.sleep(3000);
 
 		}
 			
@@ -355,15 +356,15 @@ import org.testng.annotations.Test;
 			
 			Thread.sleep(2000);
 			wait.until(ExpectedConditions.titleContains("LennoxPRO"));	
-			Thread.sleep(10000);
+			Thread.sleep(7000);
 			WebElement global = driver.findElement(By.id("globalMessages"));
 			System.out.println(global.getText());	
 			System.out.println(global.isDisplayed());	
 			Assert.assertTrue(global.getText().equalsIgnoreCase("Lead Saved Successfully"));
+			screenshot("Passed " + "Create Lead", driver);
 			Assert.assertTrue(driver.getPageSource().contains(Fnameval));
 			Assert.assertTrue(driver.getPageSource().contains(Emailval));
 			
-			screenshot("Passed" + "Create Lead", driver);
 			}
 
 		catch(Exception e) {
@@ -387,6 +388,9 @@ import org.testng.annotations.Test;
 			}
 			
 			extent.endTest(logger);
+			
+			//Logout user
+			logout();
 		}
 		
 		@AfterTest
@@ -394,7 +398,7 @@ import org.testng.annotations.Test;
 			extent.flush();
 	        extent.close();
 			
-		driver.close();
+//		driver.close();
 		
 		//Actually i don't have credit card to create a personal Microsoft Azure account, that's why i didn't integrated with Azure.
 
@@ -415,6 +419,17 @@ import org.testng.annotations.Test;
 	        return todayStr;
 		}
 
+		public void logout() {
+			Homepage homeobj = new Homepage();
+			wait.until(ExpectedConditions.elementToBeClickable(homeobj.Signeduser()));	
+			homeobj.Signeduser().click();
+			wait.until(ExpectedConditions.elementToBeClickable(homeobj.Logout()));	
+			homeobj.Logout().click();
+			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+			wait.until(ExpectedConditions.titleContains("Homepage"));	
+
+		}
+		
 		public void screenshot(String testcasename, WebDriver driver) throws IOException {
 			TakesScreenshot ts = (TakesScreenshot) driver;
 			File source = ts.getScreenshotAs(OutputType.FILE);
