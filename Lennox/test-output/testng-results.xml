@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="111557" started-at="2021-03-08T05:30:36Z" finished-at="2021-03-08T05:32:28Z">
+  <suite name="Default suite" duration-ms="163423" started-at="2021-03-08T05:58:44Z" finished-at="2021-03-08T06:01:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="111557" started-at="2021-03-08T05:30:36Z" finished-at="2021-03-08T05:32:28Z">
+    <test name="Default test" duration-ms="163423" started-at="2021-03-08T05:58:44Z" finished-at="2021-03-08T06:01:27Z">
       <class name="Lennox.CodingRound">
-        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="openbrowser" is-config="true" duration-ms="182" started-at="2021-03-08T11:00:36Z" finished-at="2021-03-08T11:00:37Z">
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="openbrowser" is-config="true" duration-ms="935" started-at="2021-03-08T11:28:44Z" finished-at="2021-03-08T11:28:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="LaunchandLogin()[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="LaunchandLogin" duration-ms="47921" started-at="2021-03-08T11:00:37Z" finished-at="2021-03-08T11:01:25Z">
+        <test-method status="PASS" signature="LaunchandLogin()[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="LaunchandLogin" duration-ms="66873" started-at="2021-03-08T11:28:45Z" finished-at="2021-03-08T11:29:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchandLogin -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="getResult" is-config="true" duration-ms="4" started-at="2021-03-08T11:01:25Z" finished-at="2021-03-08T11:01:25Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="getResult" is-config="true" duration-ms="6" started-at="2021-03-08T11:29:52Z" finished-at="2021-03-08T11:29:52Z">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="CreateLead()[pri:1, instance:Lennox.CodingRound@1e88b3c]" name="CreateLead" duration-ms="13496" started-at="2021-03-08T11:01:25Z" finished-at="2021-03-08T11:01:38Z">
+        <test-method status="PASS" signature="CreateLead()[pri:1, instance:Lennox.CodingRound@1e88b3c]" name="CreateLead" duration-ms="13146" started-at="2021-03-08T11:29:52Z" finished-at="2021-03-08T11:30:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateLead -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="getResult" is-config="true" duration-ms="1" started-at="2021-03-08T11:01:38Z" finished-at="2021-03-08T11:01:38Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="getResult" is-config="true" duration-ms="0" started-at="2021-03-08T11:30:05Z" finished-at="2021-03-08T11:30:05Z">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="CreateNew()[pri:2, instance:Lennox.CodingRound@1e88b3c]" name="CreateNew" duration-ms="49112" started-at="2021-03-08T11:01:38Z" finished-at="2021-03-08T11:02:27Z">
+        <test-method status="PASS" signature="CreateNew()[pri:2, instance:Lennox.CodingRound@1e88b3c]" name="CreateNew" duration-ms="74296" started-at="2021-03-08T11:30:05Z" finished-at="2021-03-08T11:31:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNew -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="getResult" is-config="true" duration-ms="0" started-at="2021-03-08T11:02:27Z" finished-at="2021-03-08T11:02:27Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="getResult" is-config="true" duration-ms="0" started-at="2021-03-08T11:31:19Z" finished-at="2021-03-08T11:31:19Z">
           <params>
             <param index="0">
               <value>
@@ -56,7 +56,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="endReport" is-config="true" duration-ms="818" started-at="2021-03-08T11:02:27Z" finished-at="2021-03-08T11:02:28Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:Lennox.CodingRound@1e88b3c]" name="endReport" is-config="true" duration-ms="8094" started-at="2021-03-08T11:31:19Z" finished-at="2021-03-08T11:31:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

@@ -402,7 +402,7 @@ import org.testng.annotations.Test;
 			extent.flush();
 	        extent.close();
 			
-//		driver.close();
+		driver.close();
 		
 		//Actually i don't have credit card to create a personal Microsoft Azure account, that's why i didn't integrated with Azure.
 
