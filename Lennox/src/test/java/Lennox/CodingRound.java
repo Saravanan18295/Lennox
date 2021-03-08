@@ -57,7 +57,7 @@ import org.testng.annotations.Test;
 	JavascriptExecutor js;
 
 	String today;
-	String testcasename;
+	//String testcasename;
 
 	@BeforeTest
 	public void openbrowser() throws InterruptedException {
@@ -372,6 +372,12 @@ import org.testng.annotations.Test;
 			logger.log(LogStatus.FAIL, e.getMessage());		
 			screenshot("Failed" + "Create Lead", driver);
 		}
+		finally {	
+			//Logout user
+			logout();
+			screenshot("Logout verification" + "Create Lead", driver);
+
+		}
 	}	
 	
 		@AfterMethod
@@ -389,8 +395,6 @@ import org.testng.annotations.Test;
 			
 			extent.endTest(logger);
 			
-			//Logout user
-			logout();
 		}
 		
 		@AfterTest
